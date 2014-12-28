@@ -16,7 +16,9 @@ var opts = nopt({
   'base-url': path,
   baseUrl: path, // alias for --base-url
   transitive: Boolean,
-  'exclude-dev': Boolean
+  'exclude-dev': Boolean,
+  'shim-all': Boolean,
+  shim: Array
 }, {
   h: '--help',
   v: '--version',
