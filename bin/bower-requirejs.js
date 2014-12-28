@@ -49,6 +49,8 @@ function help() {
     '  -b, --base-url          # Path which all dependencies will be relative to',
     '  -t, --transitive        # Process transitive dependencies',
     '  -d, --exclude-dev       # Exclude devDependencies',
+    '  --shim                  # Name of a dependency that will have a shim added',
+    '  --shim-all              # Add a shim to every dependency',
     ''
   ];
 
