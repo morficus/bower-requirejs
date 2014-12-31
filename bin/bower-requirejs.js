@@ -18,7 +18,8 @@ var opts = nopt({
   transitive: Boolean,
   'exclude-dev': Boolean,
   'shim-all': Boolean,
-  shim: Array
+  shim: Array,
+  'simple-shim': Boolean
 }, {
   h: '--help',
   v: '--version',
@@ -51,6 +52,7 @@ function help() {
     '  -d, --exclude-dev       # Exclude devDependencies',
     '  --shim                  # Name of a dependency that will have a shim added',
     '  --shim-all              # Add a shim to every dependency',
+    '  --simple-shim           # use a faster, more basic shim generation function',
     ''
   ];
 
